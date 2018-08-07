@@ -1,0 +1,213 @@
+<DOCTYPE HTML>
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="generalcss.css">
+  </head>
+  <body>
+  	<title>StaffDirectory</title>
+
+    <div id ="contains">
+    <div id = "links">
+      <nav class = "nav" id ="RutgersNav">
+        <a class="nav-link" href="https://www.rutgers.edu" title="Universitywide">Universitywide |</a>
+                <a class="nav-link" href="https://newbrunswick.rutgers.edu" title="New Brunswick">New Brunswick |</a>
+                <a class="nav-link" href="https://rbhs.rutgers.edu" title="RBHS">RBHS |</a>
+                <a class="nav-link" href="https://newark.rutgers.edu" title="Newark">Newark |</a>
+                <a class="nav-link" href="https://camden.rutgers.edu" title="Camden">Camden |</a>
+                <a class="nav-link" href="https://online.rutgers.edu" title="Online">Online |</a>
+                <a class="nav-link" href="http://www.rutgershealth.org/" title="Rutgers Health">Rutgers Health</a>
+      </nav>
+    </div>
+    <!--Bar id contains the elements for the search bar present at the top of the website, includes script for search at the end of the code -->
+    <div id = "bar">
+      <form id="frmSearch" class="search2" method="get" action="default.html" />
+      <input class="search2" id="txtSearch" type="text" name="serach_bar" size="15" maxlength="255" value=""/>
+      <input class="search2" type="hidden" name="sitesearch" value="default.html" />
+      <select class="search-bar" id="select1" onchange="ChangeSearch(this.value)">
+         <option value="http://search.rutgers.edu/web.html?q=">This site</option>
+                 <option value="http://search.rutgers.edu/web.html?q=">All sites</option>
+                 <option value="http://search.rutgers.edu/people.html?q=">People</option>
+                 <option value="http://search.rutgers.edu/events.html?q=">Events</option>
+                 <option value="http://search.rutgers.edu/buildings.html?q=">Buildings</option>
+                 <option value="http://search.rutgers.edu/rbhs-search.html?q=">RBHS</option>
+             </select>
+             <input class="search1" type="submit" name="submition" value="Search"/>
+         </form>
+    </div>
+  </div>
+    <!--This div is for grouping the logo and the title of the webpage-->
+    <div id = "logo-title-nav">
+      <!--ID rutgers contains the logo -->
+      <div id="rutgers-pic">
+        <img src="https://image.ibb.co/mmKayT/Rutgers_Logo.png" alt="Rutgers_Logo" border="0">
+      </div>
+      <!--ID title contains the webpage title-->
+      <div id="title-page">
+        <h3>Institutional Research and Academic Planning</h3>
+      </div>
+    </div>
+    <!--This div contains the navigation bar and slideshow -->
+    <div id="pictures">
+      <div class="navbar">
+            <a href="#" style="color:white">Home</a>
+             <div class="dropdown">
+                <a>About Us</a>
+                  <div class="dropdown-content">
+                      <a href="staffdirectorytest.html">Staff Directory</a>
+                  </div>
+            </div>
+            <a href="#" style="color:white">Our Services</a>
+              <div class="dropdown">
+                <a>Facts & Figures</a>
+                  <div class="dropdown-content">
+                      <a href="#">Rutgers University Fact Book</a>
+                      <a href="#">Facts about Rutgers</a>
+                      <a href="#">Institutional Characteristics</a>
+                      <a href="#">Reporting</a>
+                      <a href="#">Disclosures</a>
+                  </div>
+            </div>
+               <div class="dropdown">
+                  <a>Institutional Effectiveness</a>
+                  <div class="dropdown-content">
+                      <a href="#">College Scoreboard</a>
+                      <a href="#">Rankings</a>
+                      <a href="#">Surveys</a>
+                      <a href="#">University Dashboard Indicators</a>
+                      <a href="#">Disclosures</a>
+                  </div>
+            </div>
+              <div class="dropdown">
+                <a>Information For</a>
+                  <div class="dropdown-content">
+                      <a href="#">Prospective and Current Students</a>
+                      <a href="#">Faculty and Staff</a>
+                      <a href="#">Information for Public</a>
+                  </div>
+            </div>
+      </div>
+
+
+  	<div class="AboutUsNavBar">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a style="color:#585858;" href="aboutustest.html">About Us</a></li>
+				<li class="current" style="text-indent: 15px"><a style="color:#585858; font-size: 90%" href="staffdirectorytest.html">Staff Directory</a></li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+	<div class="StaffDirectoryTable">
+		<h2 style="font-weight:bold">Staff Directory</h2>
+		<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Contact Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="nameBold">Robert J. Heffernan, Ph.D.</td>
+      <td>Vice President for Institutional Research, Planning, and Decision Support <br />
+      848-932-7305 <br />
+  	  <a href="mailto:heffernan@irap.rutgers.edu">heffernan@irap.rutgers.edu</a>
+  	</td>
+    </tr>
+    <tr>
+      <td class="nameBold">La Reina Bates</td>
+      <td>Research Analyst <br />
+      	848-932-7331 <br />
+      	<a href="mailto:lbates@irap.rutgers.edu">lbates@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">James K. Burkley</td>
+      <td>Director of Compliance <br />
+      	848-932-7956 <br />
+      	<a href="mailto:burkley@irap.rutgers.edu">burkley@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Kelvin Chan</td>
+      <td>Research Analyst <br />
+      	848-932-7341 <br />
+      	<a href="mailto:kchan@irap.rutgers.edu">
+      	kchan@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Olena Albert</td>
+      <td>Application Developer<br />
+      	848-932-7305 <br />
+      	<a href="mailto:elbert@irap.rutgers.edu">elbert@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Martin Grogan</td>
+      <td>Senior Policy Analyst <br />
+      	848-932-2432 <br />
+      	<a href="mailto:grogan@irap.rutgers.edu">grogan@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Tina Grycenkov</td>
+      <td>Director, Data Analytics and Management <br />
+      	848-932-7305 <br />
+      	<a href="grycenkov@irap.rutgers.edu">grycenkov@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Marie Paulette Matis</td>
+      <td>Information Specialist <br />
+      	848-932-7305 <br />
+      	<a href="mailto:matis@irap.rutgers.edu">matis@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Philip Paladino</td>
+      <td>Director Administration & Planning <br />
+      	848-932-7956 <br />
+      	<a href="mailto:paladino@irap.rutgers.edu">paladino@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Victoria Porterfield</td>
+      <td>Research Analyst <br />
+      	848-932-7398 <br />
+      	<a href="mailto:porterfield@irap.rutgers.edu">porterfield@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Lynette O. Rock</td>
+      <td>Data Analyst<br />
+      	848-932-7326 <br />
+      	<a href="mailto:rocklo@irap.rutgers.edu">rocklo@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Weijia (Kathy) Shi</td>
+      <td>Application Developer<br />
+      	848-932-7339 <br />
+      	<a href="mailto:kshi@irap.rutgers.edu">kshi@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Raj Thannir</td>
+      <td>Application Developer<br />
+      	848-932-7303<br />
+      	<a href="mailto:rthannir@irap.rutgers.edu">rthannir@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Vidhi Waran</td>
+      <td>Senior Program Coordinator<br />
+      	Testing and Placement<br />
+      	848-932-7337<br />
+      	<a href="mailto:vwaran@irap.rutgers.edu​">vwaran@irap.rutgers.edu​</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Laurie Wisel</td>
+      <td>Department Administrator<br />
+      	848-932-8500 <br />
+      	<a href="mailto:lwisel@irap.rutgers.edu">lwisel@irap.rutgers.edu</td>
+    </tr>
+    <tr>
+      <td class="nameBold">Tin T. Lam, Ph.D.</td>
+      <td>Postdoc<br />
+      	848-932-7350 <br />
+      	<a href="mailto:tinlt@cs.rutgers.edu">tinlt@cs.rutgers.edu</td>
+    </tr>  
+  </tbody>
+</table>
+	</div>

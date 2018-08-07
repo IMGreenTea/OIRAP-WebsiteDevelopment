@@ -1,0 +1,179 @@
+<DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="referencesheet.css">
+
+<body>
+	<!--Wrapper class contains all the elements in the grid-->
+	<div class = "wrapper">
+		<!--Links id contains the elements for the navigational links on the top of the website -->
+	<div id ="contains">
+		<div id = "links">
+			<nav class = "nav" id ="RutgersNav">
+				<a class="nav-link" href="https://www.rutgers.edu" title="Universitywide">Universitywide |</a>
+                <a class="nav-link" href="https://newbrunswick.rutgers.edu" title="New Brunswick">New Brunswick |</a>
+                <a class="nav-link" href="https://rbhs.rutgers.edu" title="RBHS">RBHS |</a>
+                <a class="nav-link" href="https://newark.rutgers.edu" title="Newark">Newark |</a>
+                <a class="nav-link" href="https://camden.rutgers.edu" title="Camden">Camden |</a>
+                <a class="nav-link" href="https://online.rutgers.edu" title="Online">Online |</a>
+                <a class="nav-link" href="http://www.rutgershealth.org/" title="Rutgers Health">Rutgers Health</a>
+			</nav>
+		</div>
+		<!--Bar id contains the elements for the search bar present at the top of the website, includes script for search at the end of the code -->
+		<div id = "bar">
+			<form id="frmSearch" class="search2" method="get" action="default.html" />
+			<input class="search2" id="txtSearch" type="text" name="serach_bar" size="15" maxlength="255" value=""/>
+			<input class="search2" type="hidden" name="sitesearch" value="default.html" />
+			<select class="search-bar" id="select1" onchange="ChangeSearch(this.value)">
+				 <option value="http://search.rutgers.edu/web.html?q=">This site</option>
+                 <option value="http://search.rutgers.edu/web.html?q=">All sites</option>
+                 <option value="http://search.rutgers.edu/people.html?q=">People</option>
+                 <option value="http://search.rutgers.edu/events.html?q=">Events</option>
+                 <option value="http://search.rutgers.edu/buildings.html?q=">Buildings</option>
+                 <option value="http://search.rutgers.edu/rbhs-search.html?q=">RBHS</option>
+             </select>
+             <input class="search1" type="submit" name="submition" value="Search"/>
+         </form>
+		</div>
+	</div>
+		<!--This div is for grouping the logo and the title of the webpage-->
+		<div id = "logo-title-nav">
+			<!--ID rutgers contains the logo -->
+			<div id="rutgers-pic">
+				<img src="https://image.ibb.co/mmKayT/Rutgers_Logo.png" alt="Rutgers_Logo" border="0">
+			</div>
+			<!--ID title contains the webpage title-->
+			<div id="title-page">
+				<h3>Institutional Research and Academic Planning</h3>
+			</div>
+		</div>
+		<!--This div contains the navigation bar and slideshow -->
+		<div id="pictures">
+			<div class="navbar">
+      			<a href="referencesheettest.html" style="color:white">Home</a>
+     				 <div class="dropdown">
+        				<a>About Us</a>
+        					<div class="dropdown-content">
+          						<a href="staffdirectorytest.html">Staff Directory</a>
+        					</div>
+    				</div>
+      			<a href="ourservicestest.html" style="color:white">Our Services</a>
+        			<div class="dropdown">
+        				<a>Facts & Figures</a>
+        					<div class="dropdown-content">
+          						<a href="rutgersfactbook.html">Rutgers University Fact Book</a>
+          						<a href="rutgersfacts.html">Facts about Rutgers</a>
+          						<a href="institutionaleffectiveness.html">Institutional Characteristics</a>
+          						<a href="reporting.html">Reporting</a>
+          						<a href="disclosures.html">Disclosures</a>
+        					</div>
+    				</div>
+       				 <div class="dropdown">
+          				<a>Institutional Effectiveness</a>
+        					<div class="dropdown-content">
+          						<a href="collegescorecard.html">College Scoreboard</a>
+          						<a href="rankings.html">Rankings</a>
+          						<a href="surveys.html">Surveys</a>
+          						<a href="universitydashboardinidicators.html">University Dashboard Indicators</a>
+          						<a href="disclosures.html">Disclosures</a>
+        					</div>
+    				</div>
+        			<div class="dropdown">
+        				<a>Information For</a>
+        					<div class="dropdown-content">
+          						<a href="prospectivestudents.html">Prospective and Current Students</a>
+          						<a href="facultyandstaff.html">Faculty and Staff</a>
+          						<a href="informationforpublic.html">Information for Public</a>
+        					</div>
+    				</div>
+			</div>
+
+		<!--This div contains the slideshow that goes in the middle of the page -->
+			<div id="slideshow">
+      			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                	<ol class="carousel-indicators">
+                    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                	</ol>
+                	<div class="carousel-inner">
+                    	<div class="carousel-item active">
+                        	<img class="d-block w-100" src="https://globalhealth.rutgers.edu/wp-content/uploads/Rutgers-University-Old-Queens.jpg" alt="First slide" />
+                    	</div>
+                    	<div class="carousel-item">
+                        	<img class="d-block w-100" src="https://globalhealth.rutgers.edu/wp-content/uploads/Rutgers-University-Old-Queens.jpg" alt="Second slide" />
+                    	</div>
+                    	<div class="carousel-item">
+                        	<img class="d-block w-100" src="https://globalhealth.rutgers.edu/wp-content/uploads/Rutgers-University-Old-Queens.jpg" alt="Third slide" />
+                    	</div>
+                    	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        	<span class="sr-only">Previous</span>
+                    	</a>
+                    	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        	<span class="sr-only">Next</span>
+                    	</a>
+                	</div>
+        		</div>
+      		</div>
+      	</div>
+      	<!--This div contains the quick-links and what we do sections -->
+      	<div id ="info">
+      		<!--This id contains the quick links section-->
+      		<div id="quicklinks">
+      			<h3>Quick Links</h3>
+      				<ul class="list-of-links">
+      					<li class="link"><a href="http://academicaffairs.rutgers.edu" title="">Academic Affairs <i class="fa fa-angle-double-right"></i></a></li>
+						<li class="link"><a href="http://externalaffairs.rutgers.edu/" title="">Department of External Affairs <i class="fa fa-angle-double-right"></i></a></li>
+						<li class="link"><a href="https://ored.rutgers.edu/" title="">Office of Research and Economic Development <i class="fa fa-angle-double-right"></i></a></li>
+						<li class="link"><a href="http://libraries.rutgers.edu" title="">University Libraries <i class="fa fa-angle-double-right"></i></a></li>
+						<li class="link"><a href="http://publicsafety.rutgers.edu/" title="">University Public Safety <i class="fa fa-angle-double-right"></i></a></li>
+					</ul>
+      		</div>
+      		<!--This id contains the what we do section-->
+      		<div id="whatwedo">
+      			<h3>What We Do</h3>
+     				<p>The Office of Institutional Research and Academic Planning delivers analytical and consulting services to central, chancellor, collegiate, and administrative areas to support academic and administrative planning and evaluation. Specific activities of OIRAP include responsibility for new program development; institutional accreditation and licensing, academic program review, data and analytical support for university offices and committees; survey development, administration, and analysis; placement testing of new students; and internal, inter-institutional, state, and federal reporting.</p>
+      		</div>
+      	</div>
+      	<!--This div contains the footer-->
+      	<div id ="footer">
+      		<div id="footer-ending">
+       			<p>
+       				<a style="color:#ffcc00;" href="//www.rutgers.edu/site-resource/copyright-information">Copyright &copy;2018</a>, <strong>Rutgers, The State University of New Jersey</strong>, an equal opportunity, affirmative action institution. All rights reserved.<br /><a style="color:#ffcc00;" href="//ucm.rutgers.edu/about/ru-info">Contact RU-info</a> at 732-445-info (4636) | Questions? <a style="color:#ffcc00;" href="mailto:colonel.henry@rutgers.edu">Ask Colonel Henry</a> or text us at 732-662-2664. | <a style="color:#ffcc00;" href="//urwebsrv.rutgers.edu/webresponse/">University Webmaster</a>
+				</p>
+    		</div>
+      	</div>
+	</div>
+<!--This script is for the slideshow-->
+ 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    <script>
+        $(function () {
+            Holder.addTheme("thumb", {
+                background: "#55595c",
+                foreground: "#eceeef",
+                text: "Thumbnail"
+            });
+            $('#myCarousel').carousel({
+                // Options
+            });
+        });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!--This script is for the search bar-->
+	<script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = document.getElementById('select1').value + document.getElementById('txtSearch').value;
+        return false;
+    }
+	</script>
+</body>

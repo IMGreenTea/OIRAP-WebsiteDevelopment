@@ -1,0 +1,14 @@
+body{
+	font-family: 'Titillum Web', sans-serif;
+}
+
+.top-bar{
+	background-color: #333333;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+}
+
+.rutgers-links{
+	grid-area: 1/2/2;
+}

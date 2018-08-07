@@ -1,0 +1,124 @@
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+ul,li { list-style-type: none;
+        list-style-position:inside;
+        margin:0;
+        padding:0; }
+
+.rutgers-links{
+	grid-area: rutgers-links;
+	justify-self:left;
+	font-size:90%;
+	vertical-align: middle;
+}
+
+a{
+color:white;
+text-decoration:none;}
+
+
+.quick-links a{
+	color:white;
+	text-decoration:none;
+}
+
+.search-bar{
+	grid-area: search-bar;
+	vertical-align: middle;
+}
+
+.top-bar{
+	background-color: #333333;
+	color: white;
+	grid-area: top-bar;
+	display: grid;
+	grid-template-columns: repeat(autofit, 6,1fr);
+	grid-auto-columns: minmax(100px, auto);
+	grid-template-areas:
+	". . rutgers-links rutgers-links search-bar ."
+}
+
+.rutgers-logo{
+	grid-area: rutgers-logo;
+}
+
+.rutgers-logo-picture{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title{
+	grid-area: title;
+	color: white;
+}
+
+.nav-bar{
+	background-color: #333333;
+	color: white;
+	grid-area: nav-bar;
+}
+
+.second-bar{
+	background-color: #cc0033;
+	grid-area: second-bar;
+	display: grid;
+	grid-template-columns: repeat (autofit,6,1fr);
+	grid-auto-rows: minmax(100px, auto); /*Try to figure out why without this function it becomes a thin row vs auto-sized row */
+	grid-template-areas:
+	".  rutgers-logo . . title ."
+	".  nav-bar nav-bar nav-bar nav-bar ."
+}
+
+.images{
+	grid-columm: 2 / span 4;
+}
+
+.quick-links{
+	grid-area: quick-links;
+}
+
+.what-we-do{
+	grid-area: what-we-do;
+}
+
+.third-bar{
+	background-color: white;
+	color:black;
+	grid-area: third-bar;
+	display: grid;
+	grid-template-columns: repeat (autofill, 6,1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas:
+	". 	images ."
+	".  quick-links quick-links what-we-do what-we-do ."
+	
+}
+
+.footer{
+	grid-area: footer;
+}
+
+.last-bar{
+	background-color: black;
+	color: white;
+	grid-area: last-bar;
+	display: grid;
+	grid-template-columns: repeat (6,1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas:
+	". footer footer footer footer ."
+}
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat (6, 1fr);
+	grid-auto-rows: minmax (100px, auto);
+	grid-template-areas:
+	"top-bar"
+	"second-bar"
+	"third-bar"
+	"last-bar"
+}
+
