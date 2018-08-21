@@ -1,0 +1,144 @@
+body
+{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#contains{
+	grid-area: header;
+	background-color: #333333;
+	color: white;
+	font-size: 95%;
+	display:grid;
+	grid-template-columns: repeat(6,1fr); /*50px of space on each side and 4 equal columns in between */
+	grid-auto-rows: minmax(30px, auto);
+	grid-template-areas: ". links links links bar bar .";
+}
+
+#links{
+	grid-area: links;
+}
+
+.nav a{
+	padding:2px;
+	margin:0;
+	color:white;
+}
+
+#bar{
+	grid-area: bar;
+	display: inline-block;
+}
+
+#logo-title-nav{
+	grid-area: logo-title-nav;
+	background-color: #C70034;
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas: 
+	". logo title title title .";
+	align-items:center;
+}
+
+#rutgers-pic{
+	grid-area:logo;
+	border:none;
+	display:block;
+}
+
+#title-page{
+	grid-area:title;
+	color: #FFFFFF;
+	padding-left:75px;
+}
+
+#pictures{
+	grid-area:pictures;
+	background-color:#FFFFFF;
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-auto-rows: minmax(75px,auto);
+	grid-template-areas:
+	". nav nav nav nav .";
+	align-items:start;
+}
+
+#footer{
+	grid-area:footer;
+	background-color:#000000;
+	display:grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-auto-rows: minmax(50px, auto);
+	grid-template-areas: ". . footerending footerending footerending .";
+}
+
+#footer-ending{
+	grid-area:footerending;
+	color:white;
+	font-size:80%;
+	text-align:right;
+}
+
+/*Everything below here is for the slide show*/
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.navbar{	/*Adjust so to bind to the bottom*/
+  background-color:#212529;
+  color:white;
+  grid-area:nav;
+  bottom:0;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #7d756b;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+                    background-color: #444444
+                }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.visuallyhidden{
+  display:none;
+}

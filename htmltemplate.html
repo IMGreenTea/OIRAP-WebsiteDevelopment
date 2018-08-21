@@ -1,0 +1,102 @@
+<DOCTYPE HTML>
+	<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="templatecss.css">
+  </head>
+<!--Add title later-->
+<body>
+  <!--Wrapper class contains all the elements in the grid-->
+  <div class = "wrapper">
+    <!--Links id contains the elements for the navigational links on the top of the website -->
+  <div id ="contains">
+    <div id = "links">
+      <nav class = "nav" id ="RutgersNav">
+        <a class="nav-link" href="https://www.rutgers.edu" title="Universitywide">Universitywide |</a>
+                <a class="nav-link" href="https://newbrunswick.rutgers.edu" title="New Brunswick">New Brunswick |</a>
+                <a class="nav-link" href="https://rbhs.rutgers.edu" title="RBHS">RBHS |</a>
+                <a class="nav-link" href="https://newark.rutgers.edu" title="Newark">Newark |</a>
+                <a class="nav-link" href="https://camden.rutgers.edu" title="Camden">Camden |</a>
+                <a class="nav-link" href="https://online.rutgers.edu" title="Online">Online |</a>
+                <a class="nav-link" href="http://www.rutgershealth.org/" title="Rutgers Health">Rutgers Health</a>
+      </nav>
+    </div>
+    <!--Bar id contains the elements for the search bar present at the top of the website, includes script for search at the end of the code -->
+    <div id = "bar">
+      <form id="frmSearch" class="search2" method="get" action="default.html" />
+      <input class="search2" id="txtSearch" type="text" name="serach_bar" size="15" maxlength="255" value=""/>
+      <input class="search2" type="hidden" name="sitesearch" value="default.html" />
+      <select class="search-bar" id="select1" onchange="ChangeSearch(this.value)">
+         <option value="http://search.rutgers.edu/web.html?q=">This site</option>
+                 <option value="http://search.rutgers.edu/web.html?q=">All sites</option>
+                 <option value="http://search.rutgers.edu/people.html?q=">People</option>
+                 <option value="http://search.rutgers.edu/events.html?q=">Events</option>
+                 <option value="http://search.rutgers.edu/buildings.html?q=">Buildings</option>
+                 <option value="http://search.rutgers.edu/rbhs-search.html?q=">RBHS</option>
+             </select>
+             <input class="search1" type="submit" name="submition" value="Search"/>
+         </form>
+    </div>
+  </div>
+    <!--This div is for grouping the logo and the title of the webpage-->
+    <div id = "logo-title-nav">
+      <!--ID rutgers contains the logo -->
+      <div id="rutgers-pic">
+        <img src="https://image.ibb.co/mmKayT/Rutgers_Logo.png" alt="Rutgers_Logo" border="0">
+      </div>
+      <!--ID title contains the webpage title-->
+      <div id="title-page">
+        <h3>Institutional Research and Academic Planning</h3>
+      </div>
+    </div>
+    <!--This div contains the navigation bar and slideshow -->
+    <div id="pictures">
+      <div class="navbar">
+            <a href="referencesheettest.html" style="color:white">Home</a>
+             <div class="dropdown">
+                <a>About Us</a>
+                  <div class="dropdown-content">
+                      <a href="staffdirectorytest.html">Staff Directory</a>
+                  </div>
+            </div>
+            <a href="ourservicestest.html" style="color:white">Our Services</a>
+              <div class="dropdown">
+                <a>Facts & Figures</a>
+                  <div class="dropdown-content">
+                      <a href="rutgersfactbook.html">Rutgers University Fact Book</a>
+                      <a href="rutgersfacts.html">Facts about Rutgers</a>
+                      <a href="institutionaleffectiveness.html">Institutional Characteristics</a>
+                      <a href="reporting.html">Reporting</a>
+                      <a href="disclosures.html">Disclosures</a>
+                  </div>
+            </div>
+               <div class="dropdown">
+                  <a>Institutional Effectiveness</a>
+                  <div class="dropdown-content">
+                      <a href="collegescorecard.html">College Scoreboard</a>
+                      <a href="rankings.html">Rankings</a>
+                      <a href="surveys.html">Surveys</a>
+                      <a href="universitydashboardinidicators.html">University Dashboard Indicators</a>
+                      <a href="disclosures.html">Disclosures</a>
+                  </div>
+            </div>
+              <div class="dropdown">
+                <a>Information For</a>
+                  <div class="dropdown-content">
+                      <a href="prospectivestudents.html">Prospective and Current Students</a>
+                      <a href="facultyandstaff.html">Faculty and Staff</a>
+                      <a href="informationforpublic.html">Information for Public</a>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<!--The following div is for the footer-->
+<div id ="footer">
+  <div id="footer-ending">
+    <p>
+      <a style="color:#ffcc00;" href="//www.rutgers.edu/site-resource/copyright-information">Copyright &copy;2018</a>, <strong>Rutgers, The State University of New Jersey</strong>, an equal opportunity, affirmative action institution. All rights reserved.<br /><a style="color:#ffcc00;" href="//ucm.rutgers.edu/about/ru-info">Contact RU-info</a> at 732-445-info (4636) | Questions? <a style="color:#ffcc00;" href="mailto:colonel.henry@rutgers.edu">Ask Colonel Henry</a> or text us at 732-662-2664. | <a style="color:#ffcc00;" href="//urwebsrv.rutgers.edu/webresponse/">University Webmaster</a>
+    </p>
+  </div>
+</div>
