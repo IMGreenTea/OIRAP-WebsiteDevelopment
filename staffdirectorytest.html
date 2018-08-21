@@ -1,13 +1,16 @@
 <DOCTYPE HTML>
 	<head>
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="generalcss.css">
   </head>
-  <body>
-  	<title>StaffDirectory</title>
-
-    <div id ="contains">
+<!--Add title later-->
+<body>
+  <!--Wrapper class contains all the elements in the grid-->
+  <div class = "wrapper">
+    <!--Links id contains the elements for the navigational links on the top of the website -->
+  <div id ="contains">
     <div id = "links">
       <nav class = "nav" id ="RutgersNav">
         <a class="nav-link" href="https://www.rutgers.edu" title="Universitywide">Universitywide |</a>
@@ -50,164 +53,172 @@
     <!--This div contains the navigation bar and slideshow -->
     <div id="pictures">
       <div class="navbar">
-            <a href="#" style="color:white">Home</a>
+            <a href="referencesheettest.html" style="color:white">Home</a>
              <div class="dropdown">
                 <a>About Us</a>
                   <div class="dropdown-content">
                       <a href="staffdirectorytest.html">Staff Directory</a>
                   </div>
             </div>
-            <a href="#" style="color:white">Our Services</a>
+            <a href="ourservicestest.html" style="color:white">Our Services</a>
               <div class="dropdown">
                 <a>Facts & Figures</a>
                   <div class="dropdown-content">
-                      <a href="#">Rutgers University Fact Book</a>
-                      <a href="#">Facts about Rutgers</a>
-                      <a href="#">Institutional Characteristics</a>
-                      <a href="#">Reporting</a>
-                      <a href="#">Disclosures</a>
+                      <a href="rutgersfactbook.html">Rutgers University Fact Book</a>
+                      <a href="rutgersfacts.html">Facts about Rutgers</a>
+                      <a href="institutionaleffectiveness.html">Institutional Characteristics</a>
+                      <a href="reporting.html">Reporting</a>
+                      <a href="disclosures.html">Disclosures</a>
                   </div>
             </div>
                <div class="dropdown">
                   <a>Institutional Effectiveness</a>
                   <div class="dropdown-content">
-                      <a href="#">College Scoreboard</a>
-                      <a href="#">Rankings</a>
-                      <a href="#">Surveys</a>
-                      <a href="#">University Dashboard Indicators</a>
-                      <a href="#">Disclosures</a>
+                      <a href="collegescorecard.html">College Scoreboard</a>
+                      <a href="rankings.html">Rankings</a>
+                      <a href="surveys.html">Surveys</a>
+                      <a href="universitydashboardinidicators.html">University Dashboard Indicators</a>
+                      <a href="disclosures.html">Disclosures</a>
                   </div>
             </div>
               <div class="dropdown">
                 <a>Information For</a>
                   <div class="dropdown-content">
-                      <a href="#">Prospective and Current Students</a>
-                      <a href="#">Faculty and Staff</a>
-                      <a href="#">Information for Public</a>
+                      <a href="prospectivestudents.html">Prospective and Current Students</a>
+                      <a href="facultyandstaff.html">Faculty and Staff</a>
+                      <a href="informationforpublic.html">Information for Public</a>
                   </div>
             </div>
       </div>
-
-
-  	<div class="AboutUsNavBar">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<ul class="nav navbar-nav">
-				<li><a style="color:#585858;" href="aboutustest.html">About Us</a></li>
-				<li class="current" style="text-indent: 15px"><a style="color:#585858; font-size: 90%" href="staffdirectorytest.html">Staff Directory</a></li>
-			</ul>
-		</div>
-	</nav>
-	</div>
-	<div class="StaffDirectoryTable">
-		<h2 style="font-weight:bold">Staff Directory</h2>
-		<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Contact Information</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="nameBold">Robert J. Heffernan, Ph.D.</td>
-      <td>Vice President for Institutional Research, Planning, and Decision Support <br />
-      848-932-7305 <br />
-  	  <a href="mailto:heffernan@irap.rutgers.edu">heffernan@irap.rutgers.edu</a>
-  	</td>
-    </tr>
-    <tr>
-      <td class="nameBold">La Reina Bates</td>
-      <td>Research Analyst <br />
-      	848-932-7331 <br />
-      	<a href="mailto:lbates@irap.rutgers.edu">lbates@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">James K. Burkley</td>
-      <td>Director of Compliance <br />
-      	848-932-7956 <br />
-      	<a href="mailto:burkley@irap.rutgers.edu">burkley@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Kelvin Chan</td>
-      <td>Research Analyst <br />
-      	848-932-7341 <br />
-      	<a href="mailto:kchan@irap.rutgers.edu">
-      	kchan@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Olena Albert</td>
-      <td>Application Developer<br />
-      	848-932-7305 <br />
-      	<a href="mailto:elbert@irap.rutgers.edu">elbert@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Martin Grogan</td>
-      <td>Senior Policy Analyst <br />
-      	848-932-2432 <br />
-      	<a href="mailto:grogan@irap.rutgers.edu">grogan@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Tina Grycenkov</td>
-      <td>Director, Data Analytics and Management <br />
-      	848-932-7305 <br />
-      	<a href="grycenkov@irap.rutgers.edu">grycenkov@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Marie Paulette Matis</td>
-      <td>Information Specialist <br />
-      	848-932-7305 <br />
-      	<a href="mailto:matis@irap.rutgers.edu">matis@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Philip Paladino</td>
-      <td>Director Administration & Planning <br />
-      	848-932-7956 <br />
-      	<a href="mailto:paladino@irap.rutgers.edu">paladino@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Victoria Porterfield</td>
-      <td>Research Analyst <br />
-      	848-932-7398 <br />
-      	<a href="mailto:porterfield@irap.rutgers.edu">porterfield@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Lynette O. Rock</td>
-      <td>Data Analyst<br />
-      	848-932-7326 <br />
-      	<a href="mailto:rocklo@irap.rutgers.edu">rocklo@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Weijia (Kathy) Shi</td>
-      <td>Application Developer<br />
-      	848-932-7339 <br />
-      	<a href="mailto:kshi@irap.rutgers.edu">kshi@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Raj Thannir</td>
-      <td>Application Developer<br />
-      	848-932-7303<br />
-      	<a href="mailto:rthannir@irap.rutgers.edu">rthannir@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Vidhi Waran</td>
-      <td>Senior Program Coordinator<br />
-      	Testing and Placement<br />
-      	848-932-7337<br />
-      	<a href="mailto:vwaran@irap.rutgers.edu​">vwaran@irap.rutgers.edu​</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Laurie Wisel</td>
-      <td>Department Administrator<br />
-      	848-932-8500 <br />
-      	<a href="mailto:lwisel@irap.rutgers.edu">lwisel@irap.rutgers.edu</td>
-    </tr>
-    <tr>
-      <td class="nameBold">Tin T. Lam, Ph.D.</td>
-      <td>Postdoc<br />
-      	848-932-7350 <br />
-      	<a href="mailto:tinlt@cs.rutgers.edu">tinlt@cs.rutgers.edu</td>
-    </tr>  
-  </tbody>
-</table>
-	</div>
+    </div>
+    <!--The following div contains the AboutUsNavBar and Staff Directory-->
+    <div id="barandtable">
+      <div id="AboutUsNavBar">
+	       <nav>
+			     <ul class="nav navbar-nav">
+				      <li><a style="color:#585858;" href="aboutustest.html">About Us</a></li>
+				      <li class="current" style="text-indent: 15px"><a style="color:#585858; font-size: 90%" href="staffdirectorytest.html">Staff Directory</a></li>
+			     </ul>
+	       </nav>
+	     </div>
+	   <div id="StaffDirectoryTable">
+		  <h3 style="font-weight:bold">Staff Directory</h2>
+		    <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Contact Information</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="nameBold">Robert J. Heffernan, Ph.D.</td>
+              <td>Vice President for Institutional Research, Planning, and Decision Support <br />
+              848-932-7305 <br />
+  	           <a href="mailto:heffernan@irap.rutgers.edu">heffernan@irap.rutgers.edu</a>
+  	         </td>
+            </tr>
+            <tr>
+              <td class="nameBold">La Reina Bates</td>
+              <td>Research Analyst <br />
+      	       848-932-7331 <br />
+      	       <a href="mailto:lbates@irap.rutgers.edu">lbates@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">James K. Burkley</td>
+              <td>Director of Compliance <br />
+      	       848-932-7956 <br />
+      	       <a href="mailto:burkley@irap.rutgers.edu">burkley@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Kelvin Chan</td>
+              <td>Research Analyst <br />
+      	       848-932-7341 <br />
+      	       <a href="mailto:kchan@irap.rutgers.edu">
+      	       kchan@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Olena Albert</td>
+              <td>Application Developer<br />
+      	       848-932-7305 <br />
+      	       <a href="mailto:elbert@irap.rutgers.edu">elbert@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Martin Grogan</td>
+              <td>Senior Policy Analyst <br />
+      	       848-932-2432 <br />
+      	       <a href="mailto:grogan@irap.rutgers.edu">grogan@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Tina Grycenkov</td>
+              <td>Director, Data Analytics and Management <br />
+      	       848-932-7305 <br />
+      	       <a href="grycenkov@irap.rutgers.edu">grycenkov@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Marie Paulette Matis</td>
+              <td>Information Specialist <br />
+      	       848-932-7305 <br />
+      	       <a href="mailto:matis@irap.rutgers.edu">matis@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Philip Paladino</td>
+              <td>Director Administration & Planning <br />
+      	       848-932-7956 <br />
+      	       <a href="mailto:paladino@irap.rutgers.edu">paladino@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Victoria Porterfield</td>
+              <td>Research Analyst <br />
+      	       848-932-7398 <br />
+      	       <a href="mailto:porterfield@irap.rutgers.edu">porterfield@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Lynette O. Rock</td>
+              <td>Data Analyst<br />
+      	       848-932-7326 <br />
+      	       <a href="mailto:rocklo@irap.rutgers.edu">rocklo@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Weijia (Kathy) Shi</td>
+              <td>Application Developer<br />
+      	       848-932-7339 <br />
+      	       <a href="mailto:kshi@irap.rutgers.edu">kshi@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Raj Thannir</td>
+              <td>Application Developer<br />
+      	       848-932-7303<br />
+      	       <a href="mailto:rthannir@irap.rutgers.edu">rthannir@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Vidhi Waran</td>
+              <td>Senior Program Coordinator<br />
+      	       Testing and Placement<br />
+      	       848-932-7337<br />
+      	       <a href="mailto:vwaran@irap.rutgers.edu​">vwaran@irap.rutgers.edu​</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Laurie Wisel</td>
+              <td>Department Administrator<br />
+      	       848-932-8500 <br />
+      	       <a href="mailto:lwisel@irap.rutgers.edu">lwisel@irap.rutgers.edu</td>
+            </tr>
+            <tr>
+              <td class="nameBold">Tin T. Lam, Ph.D.</td>
+              <td>Postdoc<br />
+      	       848-932-7350 <br />
+      	       <a href="mailto:tinlt@cs.rutgers.edu">tinlt@cs.rutgers.edu</td>
+            </tr>  
+          </tbody>
+        </table>
+    </div>
+</div>
+<!--The following div is for the footer-->
+<div id ="footer">
+  <div id="footer-ending">
+    <p>
+      <a style="color:#ffcc00;" href="//www.rutgers.edu/site-resource/copyright-information">Copyright &copy;2018</a>, <strong>Rutgers, The State University of New Jersey</strong>, an equal opportunity, affirmative action institution. All rights reserved.<br /><a style="color:#ffcc00;" href="//ucm.rutgers.edu/about/ru-info">Contact RU-info</a> at 732-445-info (4636) | Questions? <a style="color:#ffcc00;" href="mailto:colonel.henry@rutgers.edu">Ask Colonel Henry</a> or text us at 732-662-2664. | <a style="color:#ffcc00;" href="//urwebsrv.rutgers.edu/webresponse/">University Webmaster</a>
+    </p>
+  </div>
+</div>
